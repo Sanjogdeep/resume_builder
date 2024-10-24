@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Preview</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: url(backg-img.jpg);
+            background-size: cover;
+        }
+        .container{
+            background-color:rgba(136, 104, 104, 0.849) ;
+        }
+        #preview{
+            text-align: center;
+        }
+        div{
+            text-align: center;
+        }
+        .btn{
+            color: aliceblue;
+            font-size: 17px;
+        }
+        .btn:hover{
+            border: 1px solid whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="preview">Resume Preview</h1>
+        <div id="resume-preview" class="resume"></div>
+        <button id="download-btn">Download Resume</button>
+        <a href="index.html" class="btn">Start Over</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

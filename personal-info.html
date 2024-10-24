@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: url(backg-img.jpg);
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+        .container{
+            background-color:rgba(136, 104, 104, 0.849) ;
+        }
+        form{
+            background-color:rgba(136, 104, 104, 0.849) ;
+        }
+        label{
+            font-size: larger;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Information</h1>
+        <form id="personal-info-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" accept="image/*" required>
+            <button type="button" onclick="savePersonalInfo()">Next</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

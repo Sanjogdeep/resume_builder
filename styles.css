@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure it takes full height */
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px; /* Space around the container */
+    transition: transform 0.2s; /* Smooth hover effect */
+
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slight scale on hover */
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 10px; /* Space below headers */
+
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input:focus, textarea:focus {
+    border-color: #28a745; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+textarea {
+    height: 100px; /* Fixed height for text area */
+    resize: none; /* Disable resize to prevent overflow */
+}
+
+button, .btn {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth color transition */
+    width: 100%; /* Full width button */
+}
+
+button:hover, .btn:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+.resume {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+#download-btn {
+    background-color: #007bff; /* Blue color for download button */
+}
+
+#download-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Adjust padding on smaller screens */
+    }
+
+    h1, h2 {
+        font-size: 24px; /* Slightly smaller font size */
+    }
+
+    input, textarea, button {
+        font-size: 14px; /* Smaller input font size */
+    }
+}

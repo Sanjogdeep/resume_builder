@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #skills1{
+            text-align: center;
+            margin-top: 12px;
+        }
+        #skills{
+            margin-top: 50px;
+            margin-bottom: 30px;
+            height: 100px;
+            width: 45%;
+
+        }
+        body{
+            background-image: url(backg-img.jpg);
+            background-size: cover;
+        }
+        .container{
+            background-color:rgba(136, 104, 104, 0.849) ;;
+        }
+        form{
+            background-color:rgba(136, 104, 104, 0.156) ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="skill-container">
+        <h1 id="skills1">Skills</h1>
+        <form id="skills-form">
+            <textarea id="skills" placeholder="Enter skills, one per line" required></textarea>
+            <h1>Projects</h1>
+            <textarea id="skills" placeholder="Write Projects" required></textarea>
+
+            <button type="button" onclick="saveSkills()">Next</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
